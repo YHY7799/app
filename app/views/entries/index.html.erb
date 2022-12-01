@@ -1,0 +1,24 @@
+<p style="color: green" ><%= notice %></p>
+
+<h1 style="text-align: right;">الشقق</h1>
+<div class="card" style="width: 18rem;" class="layout-right">
+  <div class="card-body" style="text-align: right;">
+    <div id="entries">
+      <% @entries.each do |entry| %>
+        <%= render entry %>
+         <% if user_signed_in? %>
+          <p>
+            <%= link_to "إظهار", entry, class:"btn btn-success" %> 
+          </p>
+        <% end %>
+        <hr><br>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

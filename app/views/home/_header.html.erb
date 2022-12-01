@@ -1,0 +1,15 @@
+<nav class="navbar fixed-buttom navbar-expand-lg navbar-light bg-light" >
+
+       <div>
+               
+                <% if user_signed_in? %>
+                        <%= link_to "الرئيسية", root_path, class:"btn btn-outline-primary" %> 
+                        <%= link_to "إضافة", new_entry_path, class:"btn btn-outline-primary btn-sm" %>  
+                        <%= link_to "تعديل الحساب ", edit_user_registration_path, class:"btn btn-outline-primary btn-sm" %>
+
+                <% else %>
+                        <%= link_to "تسجيل الدخول", new_user_session_path, class:"btn btn-outline-primary btn-sm" %>  <br>
+                
+                <% end %>
+        </div>
+</nav>
