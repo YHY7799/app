@@ -61,10 +61,10 @@ group :development do
   gem 'devise', '~> 4.8', '>= 4.8.1'
 end
 
-group :production do 
-  gem 'pg', '~> 1.4', '>= 1.4.5'
-  gem 'rails_12factor'
-end
+# group :production do 
+#   gem 'pg', '~> 1.4', '>= 1.4.5'
+#   gem 'rails_12factor'
+# end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
