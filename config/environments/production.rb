@@ -90,8 +90,4 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
-  config.cache_store = :mem_cache_store
-
-  config.action_mailer.default_url_options = { host: 'https://yhyy7799.herokuapp.com/', port: 20 }
 end
